@@ -1,0 +1,17 @@
+<form action="/new" method="POST">
+  <div class="form-control">
+    <label>Title</label>
+    <input type="text" name="name"></input>
+  </div>
+
+  <div class="form-control">
+    <label>Description</label>
+    <textarea name="description"></textarea>
+  </div>
+  <input type="submit"></input>
+</form>
+
+{% for item in items %}
+  <h1> {{ item.name }} </h1>
+  <p> {{ item.description }} <p>
+{% endfor %}
